@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Manager</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		#header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		#content {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 10px;
+		}
+		.file {
+			background-color: #f2f2f2;
+			border: 1px solid #ddd;
+			flex-basis: calc(33.333% - 20px);
+			flex-grow: 1;
+			flex-shrink: 1;
+			margin: 10px;
+			padding: 10px;
+			text-align: center;
+		}
+		.file:hover {
+			background-color: #ddd;
+		}
+		.file img {
+			height: 50px;
+			margin-bottom: 10px;
+		}
+		.file h2 {
+			margin: 0;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<h1>File Manager</h1>
+	</div>
+	<div id="content">
+		<div class="file">
+			<img src="folder.png" alt="Folder">
+			<h2>Folder 1</h2>
+		</div>
+		<div class="file">
+			<img src="folder.png" alt="Folder">
+			<h2>Folder 2</h2>
+		</div>
+		<div class="file">
+			<img src="file.png" alt="File">
+			<h2>File 1.txt</h2>
+		</div>
+		<div class="file">
+			<img src="file.png" alt="File">
+			<h2>File 2.pdf</h2>
+		</div>
+		<div class="file">
+			<img src="file.png" alt="File">
+			<h2>File 3.jpg</h2>
+		</div>
+		<div class="file">
+			<img src="folder.png" alt="Folder">
+			<h2>Folder 3</h2>
+		</div>
+	</div>
+</body>
+</html>
